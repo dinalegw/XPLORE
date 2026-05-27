@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5E3C"/>
+      <stop offset="100%" style="stop-color:#5C3317"/>
+    </linearGradient>
+  </defs>
+  <!-- Tree trunk -->
+  <rect x="42" y="55" width="16" height="35" rx="2" fill="#5C3317"/>
+  <!-- Tree foliage -->
+  <polygon points="50,10 20,55 80,55" fill="url(#woodGrad)"/>
+  <polygon points="50,20 25,50 75,50" fill="#6B8E23"/>
+  <polygon points="50,30 30,45 70,45" fill="#8FBC8F"/>
+  <!-- Highlight -->
+  <circle cx="40" cy="40" r="8" fill="rgba(255,255,255,0.15)"/>
+</svg>
