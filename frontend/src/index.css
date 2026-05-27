@@ -740,7 +740,48 @@ body {
     max-width: 400px;
     padding: 28px 24px;
   }
-  .auth-title { font-size: 28px; }
+   .auth-title { font-size: 28px; }
+}
+
+.error-container {
+   position: fixed;
+   top: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background: var(--glass-bg);
+   border: 1px solid var(--glass-border);
+   border-radius: var(--radius-md);
+   padding: 16px 24px;
+   max-width: 90%;
+   width: 400px;
+   z-index: 1000;
+   backdrop-filter: blur(10px);
+   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+   color: #ff6b6b;
+   font-size: 16px;
+   margin-bottom: 12px;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.error-container button {
+   background: var(--wood-warm);
+   color: white;
+   border: none;
+   padding: 8px 16px;
+   border-radius: var(--radius-sm);
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.error-container button:hover {
+   background: var(--accent);
+   transform: translateY(-2px);
 }
 
 /* ─── MOBILE SMALL ───────────────────────────────────────── */

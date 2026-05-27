@@ -72,7 +72,7 @@ export default function ChatApp({ session }) {
           </div>
         ) : (
           <span style={{ fontFamily: "var(--font-display)", fontSize: "16px", color: "var(--wood-pale)" }}>
-            🪵 Timber
+            🪵 XPLORE
           </span>
         )}
       </div>

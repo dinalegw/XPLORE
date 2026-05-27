@@ -43,8 +43,18 @@ func broadcastAll(event models.WSEvent) {
 }
 
 func WSHandler(c *websocket.Conn) {
-	userID := c.Query("user_id")
+	// Get token and roomID from query parameters
+	token := c.Query("token")
 	roomID := c.Query("room_id")
+
+	// Validate token
+	userID, err := ValidateToken(token)
+	if err != nil {
+		// Send error message and close connection
+		c.WriteMessage(websocket.TextMessage, []byte(`{"error": "Invalid or missing token"}`))
+		c.Close()
+		return
+	}
 
 	client := &Client{UserID: userID, RoomID: roomID, Conn: c}
 

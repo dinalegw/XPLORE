@@ -12,6 +12,7 @@ export const useChatStore = create((set, get) => ({
   pendingReceived: [],
   pendingSent: [],
   pendingRequestsCount: 0,
+  wsError: null,
 
   setRooms: (rooms) => set({ rooms }),
   setActiveRoom: (room) => set({ activeRoom: room }),
@@ -57,4 +58,8 @@ export const useChatStore = create((set, get) => ({
     pendingSent: friends.pending_sent || [],
   }),
   setPendingRequestsCount: (count) => set({ pendingRequestsCount: count }),
+  setWsError: (error) => set({ wsError: error }),
+  clearWsError: () => set({ wsError: null }),
 }));
+
+

@@ -32,7 +32,7 @@ export default function Auth() {
       <div className="auth-card glass-panel">
         <div className="auth-logo">
           <span className="auth-logo-icon">🪵</span>
-          <h1 className="auth-title">Timber</h1>
+          <h1 className="auth-title">XPLORE</h1>
           <p className="auth-subtitle">where conversations grow</p>
         </div>
         <div className="auth-tabs">

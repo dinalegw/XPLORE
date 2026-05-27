@@ -135,7 +135,7 @@ export default function Sidebar({ session, send, isOpen, onClose }) {
           <button className="menu-btn" onClick={onClose} style={{ display: 'block' }}>✕</button>
         )}
         <span className="sidebar-logo">🪵</span>
-        <h1 className="sidebar-title">Timber</h1>
+        <h1 className="sidebar-title">XPLORE</h1>
         <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
           {pendingRequestsCount > 0 && (
             <button className="notif-btn" onClick={() => setShowUserSearch(true)} title="Friend requests">
