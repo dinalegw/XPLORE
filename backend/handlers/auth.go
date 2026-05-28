@@ -1,5 +1,11 @@
 package handlers
 
+type supabaseUser struct {
+    ID    string json:"id"
+    Email string json:"email"
+}
+
+
 import (
 	"encoding/json"
 	"fmt"
