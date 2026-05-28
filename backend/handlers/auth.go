@@ -1,11 +1,5 @@
 package handlers
 
-type supabaseUser struct {
-    ID    string json:"id"
-    Email string json:"email"
-}
-
-
 import (
 	"encoding/json"
 	"fmt"
@@ -17,6 +11,11 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 )
+
+type supabaseUser struct {
+    ID    string `json:"id"`
+    Email string `json:"email"`
+}
 
 // ValidateToken validates the Supabase JWT token and returns the user ID
 func ValidateToken(tokenStr string) (string, error) {
